@@ -1,0 +1,17 @@
+
+/.idea
+/.vs
+/.vscode
+*.sublime-project
+*.sublime-workspace
+*.swp
+
+# misc
+.DS_Store
+.AppleDouble
+.LSOverride
+$RECYCLE.BIN/
+Desktop.ini
+Thumbs.db
+ehthumbs.db
+._*
