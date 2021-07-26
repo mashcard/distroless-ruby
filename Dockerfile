@@ -10,6 +10,9 @@ RUN apt -y update && \
   && rm -rf /var/lib/apt/lists/*
 
 FROM gcr.io/distroless/cc-debian10
+ENV GEM_HOME=/usr/local/bundle
+ENV BUNDLE_APP_CONFIG=/usr/local/bundle
+ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 LABEL org.opencontainers.iamge.authors="secure@brickdoc.com"
 LABEL org.opencontainers.image.licenses = "Apache-2.0"
 LABEL org.opencontainers.image.source = "https://github.com/brickdoc/distroless-ruby"

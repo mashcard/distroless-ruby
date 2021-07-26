@@ -20,7 +20,7 @@ For more information, see [GoogleContainerTools/distroless](https://github.com/G
 FROM ruby:3-buster  as builder
 WORKDIR /app
 ADD . /app
-RUn bundle install
+RUN bundle install
 
 # copy it into wrapdrive container
 FROM ghcr.io/brickdoc/distroless-ruby:latest
